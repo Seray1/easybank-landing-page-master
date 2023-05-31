@@ -1,0 +1,18 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "![this is a counter app with javascript](./design/desktop-preview.jpg)",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write '**/*.html'",
+    "build": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css && echo 'Built successfully!'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "tailwindcss": "^3.3.2"
+  }
+}
