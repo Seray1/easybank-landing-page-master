@@ -1,7 +1,7 @@
 {
-  "name": "interactive-rating-component-main",
+  "name": "easybank-landing-page-master",
   "version": "1.0.0",
-  "description": "![this is a counter app with javascript](./design/desktop-preview.jpg)",
+  "description": "![this is a landing page for easybank](./design/desktop-preview.jpg)",
   "main": "tailwind.config.js",
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",

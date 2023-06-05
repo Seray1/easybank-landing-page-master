@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        White: "hsl(0, 0%, 100%)",
-        LightGrey: "hsl(217, 12%, 63%)",
-        MediumGrey: "hsl(216, 12%, 54%)",
-        DarkBlue: "hsl(213, 19%, 18%)",
-        VeryDarkBlue: "hsl(216, 12%, 8%)",
-        DarkBlueTwo: "hsl(213, 19%, 25%)",
+        DarkBlue: "hsl(233, 26%, 24%)",
+        LimeGreen: "hsl(136, 65%, 51%)",
+        BrightCyan: "hsl(192, 70%, 51%)",
+        GrayishBlue: "hsl(233, 8%, 62%)",
+        LightGrayishBlue: "hsl(220, 16%, 96%)",
+        VeryLightGray: "hsl(0, 0%, 98%)",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 }
