@@ -45,6 +45,13 @@ nav li a:hover::before{
 nav li{
   list-style-type: none;
 }
+.grad:hover{
+  background-image:linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%)) ;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
   </style>
   <script src="scipt.js" defer></script>
 </head>
@@ -124,42 +131,46 @@ nav li{
     </aside>
   </section>
 
-  <section class="flex flex-col h-screen gap-8 px-20 py-10">
+  <section class="flex flex-col h-screen gap-8 px-20 py-10 shaw bg-VeryLightGray">
     <h1 class="text-4xl">Latest Articles</h1>
     <aside class="flex gap-8">
-      <div  class="flex flex-col gap-4">
+      <div  class="flex flex-col gap-4 ">
         <div><img src="images/image-currency.jpg" alt="" class="h-60"></div>
-        <h4>By Claire Robinson</h4>
-        <h1  class="text-2xl">Receive money in any currency with no fees</h1>
-        <h4>The world is getting smaller and we’re becoming more mobile. So why should you be 
+        <h4 class="text-black text-opacity-50">By Claire Robinson</h4>
+        <h1  class="text-2xl grad">Receive money in any currency with no fees</h1>
+        <h4 class="text-black text-opacity-50">The world is getting smaller and we’re becoming more mobile. So why should you be 
           forced to only receive money in a single …</h4>
       </div>
 
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 ">
         <div><img src="images/image-restaurant.jpg" alt="" class="h-60"></div>
-        <h4>By Wilson Hutton</h4>
-        <h1  class="text-2xl">Treat yourself without worrying about money</h1>
-        <h4>Our simple budgeting feature allows you to separate out your spending and set 
+        <h4 class="text-black text-opacity-50">By Wilson Hutton</h4>
+        <h1  class="text-2xl grad">Treat yourself without worrying about money</h1>
+        <h4 class="text-black text-opacity-50">Our simple budgeting feature allows you to separate out your spending and set 
           realistic limits each month. That means you …</h4>
       </div>
 
       <div class="flex flex-col gap-4">
         <div><img src="images/image-plane.jpg" alt="" class="h-60"></div>
-        <h4>By Wilson Hutton</h4>
-        <h1  class="text-2xl">Take your Easybank card wherever you go</h1>
-        <h4> We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+        <h4 class="text-black text-opacity-50">By Wilson Hutton</h4>
+        <h1  class="text-2xl grad">Take your Easybank card wherever you go</h1>
+        <h4 class="text-black text-opacity-50"> We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
           while you’re abroad. We’ll even show you …</h4>
       </div>
 
       <div class="flex flex-col gap-4">
         <div><img src="images/image-confetti.jpg" alt="" class="h-60"></div>
-        <h4>By Claire Robinson</h4>
-        <h1  class="text-2xl">Our invite-only Beta accounts are now live!</h1>
-        <h4> After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+        <h4 class="text-black text-opacity-50">By Claire Robinson</h4>
+        <h1  class="text-2xl grad">Our invite-only Beta accounts are now live!</h1>
+        <h4 class="text-black text-opacity-50"> After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
           It’s easy to request an invite through the site ...</h4>
       </div>
     </aside>
 
+  </section>
+
+  <section>
+    
   </section>
 
   
