@@ -24,11 +24,11 @@ function stickyNav(ent) {
   if (!entries.isIntersecting) {
     header.classList.add("sticky")
     // images.classList.add("hidden")
-    images.classList.remove("lg:block")
+    // images.classList.remove("lg:block")
   } else {
     header.classList.remove("sticky")
     // images.classList.remove("hidden")
-    images.classList.add("block")
+    // images.classList.add("block")
   }
 }
 
