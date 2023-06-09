@@ -8,8 +8,29 @@ const sectionThree = document.getElementById("section-three")
 const firstSection = document.querySelector("article")
 const inviteBtn = document.querySelector("btn-1")
 const images = document.querySelector(".images")
+const hamburger = document.getElementById("icon-hamburger")
+const closeNav = document.getElementById("close-nav")
+const blurEl = document.getElementById("blur")
 
-console.log(images)
+console.log(hamburger)
+
+hamburger.addEventListener("click", function () {
+  console.log("ham")
+  linksContainer.classList.toggle("responsive-nav")
+  linksContainer.classList.toggle("responsive-nav2")
+  closeNav.classList.remove("hidden")
+  this.classList.add("hidden")
+  blurEl.classList.add("blur")
+})
+
+closeNav.addEventListener("click", function () {
+  console.log("close")
+  linksContainer.classList.remove("responsive-nav")
+  linksContainer.classList.remove("responsive-nav2")
+  hamburger.classList.remove("hidden")
+  this.classList.add("hidden")
+  blurEl.classList.remove("blur")
+})
 
 //Sticky navigation
 
@@ -23,11 +44,11 @@ function stickyNav(ent) {
 
   if (!entries.isIntersecting) {
     header.classList.add("sticky")
-    // images.classList.add("hidden")
+    images.classList.add("lg:hidden")
     // images.classList.remove("lg:block")
   } else {
     header.classList.remove("sticky")
-    // images.classList.remove("hidden")
+    images.classList.remove("lg:hidden")
     // images.classList.add("block")
   }
 }
@@ -61,6 +82,7 @@ for (i = 0; i < sections.length; i++) {
 //Smooth scrolling
 
 linksContainer.addEventListener("click", function (e) {
+  blurEl.classList.add("hidden")
   e.preventDefault()
   console.log("clicked")
   if (e.target.classList.contains("link")) {
